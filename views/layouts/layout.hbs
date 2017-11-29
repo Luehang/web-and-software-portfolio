@@ -5,69 +5,19 @@
         <title>{{title}}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel='stylesheet' href='https://necolas.github.io/normalize.css/7.0.0/normalize.css'/>
         <link rel='stylesheet' href='/stylesheets/style.css'/>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Cabin" rel="stylesheet"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
         <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
     </head>
     <body>
-        <div class="screen">
-            <div class="slide">
-                <div class="belt">
-                    <div class="state state-1">
-                        <div class="content">
-                            <div id="scene"></div>
-                        </div>
-                        <div class="main-page-container">
-                            <div class="title">
-                                <h2>Hello, I'm </h2><span>Lue Hang. <br/></span>
-                                <h2>I'm a web and software <br/> developer.</h2>
-                            </div>
-                            <div class="button"> 
-                                <p>MORE </p>
-                                <p>&#11015;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="state state-2">
-                        <nav>
-                            <div class="list-icon-container">
-                                <div class="list-mobile-container">
-                                    <h3>Lue Hang's Portfolio</h3>
-                                    <div class="icon-list">
-                                        <div class="list-bar"></div>
-                                        <div class="list-bar"></div>
-                                        <div class="list-bar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-list-container dropdown-menu menu-1">
-                                <div class="nav-container">
-                                    <div id="dropdown-menu-1" class="dropdown-menu-disable">
-                                        <ul class="main-list">
-                                            <li><a class="nav-main-text home" href="#">HOME</a></li>
-                                            <li><a class="nav-main-text selected" href="#">ABOUT</a></li>
-                                            <li><a class="nav-main-text" href="#">PORTFOLIO</a></li>
-                                            <li><a class="nav-main-text" href="#">CONTACT</a></li>
-                                        </ul>
-                                        <ul class="social-list">
-                                            <li class="login-text">SOCIAL LOGIN
-                                                <ul class="dropdown-menu menu-2">
-                                                    <li class="dropdown-menu-disable"><a href="#">Facebook Login</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{{body}}}
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
 </html>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="javascripts/index.js"></script>
+

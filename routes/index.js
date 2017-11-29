@@ -4,21 +4,12 @@ const router = express.Router();
 const Product = require('../models/Product');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    const successMsg = req.flash('success')[0];
-    Product.find(function(err, docs) {
-        let productChunks = [];
-        let chunkSize = 3;
-        for (var i = 0; i < docs.length; i += chunkSize) {
-            productChunks.push(docs.slice(i, i + chunkSize));
-        }
-        res.render('portfolio/index', { 
-            title: 'Shopping Cart', 
-            products: productChunks,
-            successMsg: successMsg,
-            noMessages: !successMsg
-        });
-    });
+router.get('/', (req, res) => {
+    res.render('portfolio/main', {title: 'Lue Hang\'s Portfolio'});
+});
+
+router.get('/index', (req, res) => {
+    res.render('portfolio/index', {title: 'Lue Hang\'s Portfolio'});
 });
 
 module.exports = router;

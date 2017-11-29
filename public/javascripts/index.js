@@ -1,3 +1,15 @@
+// loader page time out
+const loader = document.getElementsByClassName("loader-container");
+const content = document.getElementsByClassName("content");
+const mainPageContainer = document.getElementsByClassName("main-page-container");
+setTimeout(function() {
+  loader[0].style.display = "none";
+  loader[0].style.height = "0";
+  content[0].style.visibility = "visible";
+  content[0].style.height = "100%";
+  mainPageContainer[0].style.visibility = "visible";
+  mainPageContainer[0].style.height = "200px";
+}, 3000);
 
 // main page js
 $('.button').click(function() {
