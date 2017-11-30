@@ -11,12 +11,12 @@ setTimeout(function() {
   content[0].style.height = "100%";
   mainPageContainer[0].style.visibility = "visible";
   mainPageContainer[0].style.height = "200px";
-}, 10);
+}, 3000);
 
 /********************************************
 main page js
 *********************************************/
-$('.state-1 .button').click(function() {
+$('.main-button').click(function() {
   $(this).parents('.slide').toggleClass('is-transitioned');
 });
 $('.home').click(function() {

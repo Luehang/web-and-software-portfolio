@@ -1,10 +1,15 @@
 {
-  "name": "shopping-cart",
+  "name": "lue_hangs_portfolio",
   "version": "0.0.0",
   "private": true,
-  "author": "lue_hang@hotmail.com",
+  "author": {
+    "name": "Lue Hang",
+    "email": "lue_hang@hotmail.com"
+  },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "babel": "babel",
+    "webpack": "webpack"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -26,5 +31,14 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.9.1"
   }
 }
