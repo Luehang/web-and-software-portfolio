@@ -38,9 +38,9 @@
                             <div id="dropdown-menu-1" class="dropdown-menu-disable">
                                 <ul class="main-list">
                                     <li><a class="nav-main-text home" href="#">HOME</a></li>
-                                    <li><a class="nav-main-text selected" href="#">ABOUT</a></li>
-                                    <li><a class="nav-main-text" href="#">PORTFOLIO</a></li>
-                                    <li><a class="nav-main-text" href="#">CONTACT</a></li>
+                                    <li><a class="nav-main-text selected" href="#about">ABOUT</a></li>
+                                    <li><a class="nav-main-text" href="#portfolio">PORTFOLIO</a></li>
+                                    <li><a class="nav-main-text" href="#contact">CONTACT</a></li>
                                 </ul>
                                 <ul class="social-list">
                                     <li class="login-text">SOCIAL LOGIN
@@ -53,9 +53,77 @@
                         </div>
                     </div>
                 </nav> <!-- end nav -->
-                <div class="body-container">
-
-                </div>
+                <section class="body-container" id="about">
+                    <h1>ABOUT</h1>
+                    <div class="line-separation"></div>
+                    <div class="card"><img src="https://services-media.propertylogic.net/website/1453828797/default_profile.jpg" alt="John" style="width:100%"/>
+                        <div class="profile-container">
+                            <h1>Lue Hang</h1>
+                            <p class="title">Full-Stack Web and Software Developer, Fitness Trainer</p>
+                            <p>"Mern Stack" developer and designer.  I am able to write codes for React JS, JavaScript, jQuery, Express JS, Node JS, Mongo DB, MySql, SCSS, SASS, CSS, and HTML5.  On my free time, I love to work out and practice Mauy Thai.</p><a href="mailto:Lue_Hang@hotmail.com"><i class="fa fa-envelope"></i></a><a href="https://github.com/luehang"><i class="fa fa-github"></i></a><a href="https://facebook.com/lue.hang"><i class="fa fa-facebook"></i></a><a href="https://www.linkedin.com/in/lue-hang-8ba684153"><i class="fa fa-linkedin"></i></a><a href="#contact">
+                            <button>Contact</button></a>
+                        </div>
+                    </div>
+                </section> <!-- end about section -->
+                <section class="body-container" id="portfolio">
+                    <h1>PROJECTS</h1>
+                    <div class="line-separation"></div>
+                    <div id="app"></div>
+                </section> <!-- end portfolio section -->
+                <div id="contact">
+                    <section class="body-container">
+                        <h1>CONTACT</h1>
+                        <div class="line-separation"></div>
+                        <div class="message-container">
+                            <div class="modal-wrap">
+                                <div class="modal-header"><span class="is-active"></span><span></span><span></span></div>
+                                    <div class="modal-bodies">
+                                        <form>
+                                            <div class="modal-body modal-body-step-1 is-showing">
+                                                <div class="title">Step 1</div>
+                                                <div class="description">Have a question or want to work together?</div>
+                                                <input type="text" placeholder="Name" autocomplete="name"/>
+                                                <input type="email" placeholder="Email" autocomplete="email"/>
+                                                <div class="text-center">
+                                                <div class="button">Next</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body modal-body-step-2">
+                                                <div class="title">Step 2</div>
+                                                <div class="description">Message to send.</div>
+                                                <div class="text-center">
+                                                <textarea placeholder="Message" rows="5" autocapitalize="autocapitalize" spellcheck="spellcheck"></textarea>
+                                                <div class="button">Send Message</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body modal-body-step-3">
+                                                <div class="title">Step 3</div>
+                                                <div class="description">Message sent! </div>
+                                                <div class="text-center">
+                                                <div class="button">Done!</div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            <div class="text-center">
+                                <div class="rerun-button">Send Another Message</div>
+                            </div>
+                        </div>
+                    </section>
+                </div> <!-- end contact section -->
+                <footer>
+                    <div class="body-container">
+                        <div class="top-button"><a href="#about"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+                        <div class="icons-link">
+                            <a href="mailto:Lue_Hang@hotmail.com"><i class="fa fa-envelope"></i></a>
+                            <a href="https://github.com/luehang"><i class="fa fa-github"></i></a>
+                            <a href="https://facebook.com/lue.hang"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/lue-hang-8ba684153"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <p>LUE HANG&copy;2017</p>
+                    </div>
+                </footer> <!-- end footer -->
             </div> <!-- end state-2 -->
 
         </div> <!-- end belt -->
