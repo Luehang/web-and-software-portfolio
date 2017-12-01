@@ -112,7 +112,7 @@ $('.rerun-button').click(function(){
 /********************************************
 form submit js
 *********************************************/
-$('#message-form').submit(function(event) {
+$('#message-submit').click(function(event) {
   const $nameField = $('#name');
   const $emailField = $('#email');
   const $messageField = $('#message');
@@ -131,7 +131,7 @@ $('#message-form').submit(function(event) {
       success: function (data) {
           if (data.success) {
               $alert.addClass('success');
-              $alert.append(`<div>${data.message}</div>`);
+              $alert.html(`<div>${data.message}</div>`);
               $alert.toggleClass('is-open');
               setTimeout(() => {
                   $alert.removeClass('success');
@@ -139,7 +139,7 @@ $('#message-form').submit(function(event) {
               }, 4000);
           } else if (data.success === false) {
               $alert.addClass('danger');
-              $alert.append(`<div>${data.message}</div>`);
+              $alert.html(`<div>${data.message}</div>`);
               $alert.toggleClass('is-open');
               setTimeout(() => {
                   $alert.removeClass('danger');
@@ -147,7 +147,7 @@ $('#message-form').submit(function(event) {
               }, 4000);
           } else {
               $alert.addClass('danger');
-              $alert.append(`<div>Message was not sent successfully.  Please try again.</div>`);
+              $alert.html(`<div>Message was not sent successfully.  Please try again.</div>`);
               $alert.toggleClass('is-open');
               setTimeout(() => {
                   $alert.removeClass('danger');
