@@ -11,7 +11,7 @@ setTimeout(function() {
   content[0].style.height = "100%";
   mainPageContainer[0].style.visibility = "visible";
   mainPageContainer[0].style.height = "200px";
-}, 3000);
+}, 10);
 
 /********************************************
 main page js

@@ -444,17 +444,17 @@ about css
     margin: 0 auto;
 }
 section {
-  padding: 70px 0;
-  h1 {
-    color: rgb(24, 24, 24);
-    font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
-    text-align: center;
-    margin: 0;
-  }
+    padding: 70px 0;
+    h1 {
+        color: rgb(24, 24, 24);
+        font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
+        text-align: center;
+        margin: 0;
+    }
 }
 .line-separation {
-  border-bottom: 1px solid lightgray;
-  margin: 20px 0 115px;
+    border-bottom: 1px solid lightgray;
+    margin: 20px 0 115px;
 }
 
 /********************************************
@@ -463,7 +463,7 @@ profile card css
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 300px;
-    padding: 0;
+    padding: 10px;
     margin: auto;
     text-align: center;
     img {
@@ -540,7 +540,9 @@ portfolio css
 sorting image css
 *********************************************/
 .sort-image-container {
-    padding: 2%;
+    // padding: 2%;
+    padding: 0;
+    margin: 0;
     .tab {
         float: left;
         display: inline-block;
@@ -566,7 +568,7 @@ sorting image css
     .sort-row {
         .sort {
             float: left;
-            width: 50%;
+            width: 33%;
             //display: none; /* Hide columns by default */
             animation-name: open;
             animation-duration: 300ms;
@@ -601,6 +603,11 @@ sorting image css
             content: "";
             display: table;
             clear: both;
+        }
+    }
+    @media (max-width: 1000px) {
+        .sort {
+            min-width: 50%;
         }
     }
     @media (max-width: 675px) {
@@ -643,7 +650,7 @@ browser window image css
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* Container for columns and the top "toolbar" */
     .row {
-        padding: 10px 10px 10px;
+        padding: 10px 5px;
         background: #f1f1f1;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
@@ -654,12 +661,14 @@ browser window image css
     }
     .left {
         min-width: 15%;
+        margin-right: 1%;
     }
     .right {
         width: 10%;
+        margin-left: 1%;
     }
     .middle {
-        width: 75%;
+        width: 71%;
     }
     /* Clear floats after the columns */
     .row:after {
@@ -726,15 +735,16 @@ browser window image css
         margin: 3px 0;
         display: block;
     }
-    @media (max-width: 385px) {
-        .left {
-            min-width: 15%;
-            margin-right: 7px;
-        }
-        .bar {
-            display: none;
-        }
-    }
+    // @media (max-width: 720px) {
+    //     .bar {
+    //         display: none;
+    //     }
+    // }
+    // @media (max-width: 385px) {
+    //     .bar {
+    //         display: none;
+    //     }
+    // }
 }
 /********************************************
 image layout css
