@@ -22,12 +22,6 @@ $('.main-button').click(function() {
 $('.home').click(function() {
   $(this).parents('.slide').toggleClass('is-transitioned');
 });
-
-/********************************************
-jquery.visible.min.js plugin
-*********************************************/
-!function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery); 
-
 /********************************************
 header nav js
 *********************************************/
@@ -115,5 +109,52 @@ $('.rerun-button').click(function(){
  $(this).hide();
 });
   
-
+/********************************************
+form submit js
+*********************************************/
+$('#message-form').submit(function(event) {
+  const $nameField = $('#name');
+  const $emailField = $('#email');
+  const $messageField = $('#message');
+  const $alert = $('.alert');
+  event.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: `/send-message`,
+      data: { 
+          name: $nameField.val(),
+          email: $emailField.val(),
+          message: $messageField.val()
+      },
+      dataType: "json",
+      cache: true,
+      success: function (data) {
+          if (data.success) {
+              $alert.addClass('success');
+              $alert.append(`<div>${data.message}</div>`);
+              $alert.toggleClass('is-open');
+              setTimeout(() => {
+                  $alert.removeClass('success');
+                  $alert.toggleClass('is-open');
+              }, 4000);
+          } else if (data.success === false) {
+              $alert.addClass('danger');
+              $alert.append(`<div>${data.message}</div>`);
+              $alert.toggleClass('is-open');
+              setTimeout(() => {
+                  $alert.removeClass('danger');
+                  $alert.toggleClass('is-open');
+              }, 4000);
+          } else {
+              $alert.addClass('danger');
+              $alert.append(`<div>Message was not sent successfully.  Please try again.</div>`);
+              $alert.toggleClass('is-open');
+              setTimeout(() => {
+                  $alert.removeClass('danger');
+                  $alert.toggleClass('is-open');
+              }, 4000);
+          }
+      } 
+  }); // end ajax request
+}); // end form submit
   

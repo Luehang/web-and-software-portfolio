@@ -1,19 +1,19 @@
-const express = require('express');
-const path = require('path');
-const favicon = require('serve-favicon');
-const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const expressHbs = require('express-handlebars');
-const mongoose = require('mongoose');
-const session = require('express-session');
-const passport = require('passport');
-const flash = require('connect-flash');
-const validator = require('express-validator');
-const MongoStore = require('connect-mongo')(session);
+const express               = require('express');
+const path                  = require('path');
+const favicon               = require('serve-favicon');
+const logger                = require('morgan');
+const cookieParser          = require('cookie-parser');
+const bodyParser            = require('body-parser');
+const expressHbs            = require('express-handlebars');
+const mongoose              = require('mongoose');
+const session               = require('express-session');
+const passport              = require('passport');
+const flash                 = require('connect-flash');
+const validator             = require('express-validator');
+const MongoStore            = require('connect-mongo')(session);
 
-const routes = require('./routes/index');
-const userRoutes = require('./routes/user');
+const routes                = require('./routes/index');
+const userRoutes            = require('./routes/user');
 
 require('dotenv').config();
 

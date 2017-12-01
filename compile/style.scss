@@ -15,6 +15,52 @@ body css
     width: 90%;
     margin: 0 auto;
 }
+.alert {
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    height: 0px;
+    width: 50%;
+    transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+    height: 15px;
+    line-height: 15px;
+    z-index: 20;
+    margin-top: 52px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
+    font-size: 14px;
+    display: none;
+    &.is-open {
+        display: block;
+    }
+}
+.success {
+    background: rgb(90, 202, 90);
+}
+.warning {
+    background: rgb(201, 198, 49);
+}
+.danger {
+    background: rgb(196, 52, 52);
+}
+/********************************************
+scroll animation css
+*********************************************/
+// .come-in {
+//     transform: translateY(150px);
+//     animation: come-in 0.8s ease forwards;
+// }
+// .come-in:nth-child(odd) {
+//     animation-duration: 0.6s;
+// }
+// .already-visible {
+//     transform: translateY(0);
+//     animation: none;
+// }
+// @keyframes come-in {
+//     to { transform: translateY(0); }
+// }
 /********************************************
 loader pulser css
 *********************************************/
@@ -111,7 +157,7 @@ main orientation css
     // box-shadow: 0 0 0 black;
     z-index: 2;
     transition: all 600ms ease-in-out;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .slide.is-transitioned {
     .belt {
@@ -444,7 +490,7 @@ about css
     margin: 0 auto;
 }
 section {
-    padding: 70px 0;
+    padding: 100px 0;
     h1 {
         color: rgb(24, 24, 24);
         font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
@@ -474,6 +520,14 @@ profile card css
         float: right;
         min-width: 250px;
         width: 50%;
+        min-height: 450px;
+        //height: 100%;
+        .profile-top {
+            //min-height: 80%;
+        }
+        .profile-bottom {
+            //min-height: 20%;
+        }
         h1 {
             color: rgb(24, 24, 24);
             font-family: 'Fredoka One', 'Arial Rounded MT Bold', 'Segoe UI';
@@ -494,7 +548,7 @@ profile card css
             outline: 0;
             display: inline-block;
             padding: 8px;
-            margin: 5px auto 2.5%;
+            margin: 0 auto;
             color: white;
             background-color: lightblue;
             text-align: center;

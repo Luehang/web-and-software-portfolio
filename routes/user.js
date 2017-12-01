@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const csrf = require('csurf');
+const express               = require('express');
+const router                = express.Router();
+const csrf                  = require('csurf');
 
 const csrfProtection = csrf();
 router.use(csrfProtection);

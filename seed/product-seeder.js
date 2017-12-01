@@ -1,6 +1,6 @@
-const Product = require('../models/Product');
+const Product               = require('../models/Product');
 
-const mongoose = require('mongoose');
+const mongoose              = require('mongoose');
 mongoose.connect('mongodb://localhost/shopping', { useMongoClient: true });
 
 const products = [

@@ -53,15 +53,20 @@
                         </div>
                     </div>
                 </nav> <!-- end nav -->
+                <div class="alert"></div>
                 <section class="body-container" id="about">
                     <h1>ABOUT</h1>
                     <div class="line-separation"></div>
                     <div class="card"><img src="img/lue_hang.jpg" alt="Lue Hang" style="width:100%"/>
                         <div class="profile-container">
-                            <h1>Lue Hang</h1>
-                            <p class="title">Full-Stack Web and Software Developer, Fitness Trainer</p>
-                            <p>"Mern Stack" developer and designer.  I am able to write codes for React JS, JavaScript, jQuery, Express JS, Node JS, Mongo DB, MySql, SCSS, SASS, CSS, and HTML5.  On my free time, I love to work out and practice Mauy Thai.</p><a href="mailto:Lue_Hang@hotmail.com"><i class="fa fa-envelope"></i></a><a href="https://github.com/luehang"><i class="fa fa-github"></i></a><a href="https://facebook.com/lue.hang"><i class="fa fa-facebook"></i></a><a href="https://www.linkedin.com/in/lue-hang-8ba684153"><i class="fa fa-linkedin"></i></a><a href="#contact">
-                            <button>Contact</button></a>
+                            <div class="profile-top">
+                                <h1>Lue Hang</h1>
+                                <p class="title">Full-Stack Web and Software Developer, Fitness Trainer</p>
+                                <p>"Mern Stack" developer and designer.  I am able to write codes for React JS, JavaScript, jQuery, Express JS, Node JS, Mongo DB, MySql, SCSS, SASS, CSS, and HTML5.  On my free time, I love to work out and practice Mauy Thai.</p><a href="mailto:Lue_Hang@hotmail.com"><i class="fa fa-envelope"></i></a><a href="https://github.com/luehang"><i class="fa fa-github"></i></a><a href="https://facebook.com/lue.hang"><i class="fa fa-facebook"></i></a><a href="https://www.linkedin.com/in/lue-hang-8ba684153"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="profile-bottom">
+                                <a href="#contact"><button>Contact</button></a>
+                            </div>
                         </div>
                     </div>
                 </section> <!-- end about section -->
@@ -79,12 +84,12 @@
                             <div class="modal-wrap">
                                 <div class="modal-header"><span class="is-active"></span><span></span><span></span></div>
                                     <div class="modal-bodies">
-                                        <form>
+                                        <form id="message-form" action="/send-message" method="POST">
                                             <div class="modal-body modal-body-step-1 is-showing">
                                                 <div class="title">Step 1</div>
                                                 <div class="description">Have a question or want to work together?</div>
-                                                <input type="text" placeholder="Name" autocomplete="name"/>
-                                                <input type="email" placeholder="Email" autocomplete="email"/>
+                                                <input type="text" id="name" placeholder="Name" name="name" autocomplete="name"/>
+                                                <input type="text" id="email" placeholder="Email" name="email" autocomplete="email"/>
                                                 <div class="text-center">
                                                 <div class="button">Next</div>
                                                 </div>
@@ -93,13 +98,13 @@
                                                 <div class="title">Step 2</div>
                                                 <div class="description">Write your message.</div>
                                                 <div class="text-center">
-                                                <textarea placeholder="Message" rows="5" autocapitalize="autocapitalize" spellcheck="spellcheck"></textarea>
-                                                <div class="button">Send Message</div>
+                                                <textarea id="message" placeholder="Message" rows="5" name="message" autocapitalize="autocapitalize" spellcheck="spellcheck"></textarea>
+                                                <button type="submit"><div class="button">Send Message</div></button>
                                                 </div>
                                             </div>
                                             <div class="modal-body modal-body-step-3">
                                                 <div class="title">Step 3</div>
-                                                <div class="description">Message sent! </div>
+                                                <div class="description">Message sent! Please wait for the success notification. Thank you.</div>
                                                 <div class="text-center">
                                                 <div class="button">Done!</div>
                                                 </div>
