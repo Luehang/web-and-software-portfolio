@@ -33,20 +33,11 @@ module.exports = {
             }
         ]
     },
-    // module: {
-    //     loaders: [
-    //         {
-    //             test: /.jsx?$/,
-    //             loader: 'babel-loader',
-    //             exclude: /node_modules/,
-    //             query: {
-    //                 presets: ['env', 'react']
-    //             }
-    //         }
-    //     ]
-    // },
     plugins: [
         extractSASS,
-        new webpack.optimize.UglifyJsPlugin({})
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 }
