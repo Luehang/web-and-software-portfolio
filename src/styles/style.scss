@@ -1,0 +1,63 @@
+@import 'loader';
+@import 'front-page';
+@import 'nav';
+@import 'about';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+
+/********************************************
+body css
+*********************************************/
+.body-container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.alert {
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    height: 0px;
+    width: 50%;
+    transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+    height: 15px;
+    line-height: 15px;
+    z-index: 20;
+    margin-top: 52px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
+    font-size: 14px;
+    display: none;
+    &.is-open {
+        display: block;
+    }
+}
+.success {
+    background: rgb(90, 202, 90);
+}
+.warning {
+    background: rgb(201, 198, 49);
+}
+.danger {
+    background: rgb(196, 52, 52);
+}
+/********************************************
+scroll animation css
+*********************************************/
+// .come-in {
+//     transform: translateY(150px);
+//     animation: come-in 0.8s ease forwards;
+// }
+// .come-in:nth-child(odd) {
+//     animation-duration: 0.6s;
+// }
+// .already-visible {
+//     transform: translateY(0);
+//     animation: none;
+// }
+// @keyframes come-in {
+//     to { transform: translateY(0); }
+// }
+
