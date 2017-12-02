@@ -66,7 +66,6 @@ class FilterableImages extends Component {
         const javascript = this.state.javascript ? "button sort-selected" : "button";
         return (
             <div className="sort-image-container">
-                <h2>fafdafd</h2>
                 <div className="tab">
                     <div 
                     className={all}
