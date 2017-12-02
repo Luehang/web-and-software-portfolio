@@ -30,6 +30,8 @@ contact form css
         padding: 10px 20px;
         border: 1px solid #999;
         border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
         display: block;
         width: 100%;
         margin-bottom: 20px;
@@ -58,6 +60,8 @@ contact form css
         height: 25px;
         line-height: 25px;
         border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-family: 'Cabin', 'Trebuchet MS', 'Tahoma';
@@ -93,6 +97,8 @@ contact form css
         justify-content: center;
         align-items: center; 
         border-radius: 2px 2px 0 0;
+        -webkit-border-radius: 2px 2px 0 0;
+        -moz-border-radius: 2px 2px 0 0;
     }
     span {
         display: block;
@@ -100,6 +106,8 @@ contact form css
         width: 12px;
         margin: 5px;
         border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         background: rgba(0, 0, 0, 0.2); 
         &.is-active {
             background: rgba(0, 0, 0, 0.4);
@@ -121,6 +129,8 @@ contact form css
         box-sizing: border-box;
         width: 100%;
         border-radius: 0 0 2px 2px;
+        -webkit-border-radius: 0 0 2px 2px;
+        -moz-border-radius: 0 0 2px 2px;
         transform-origin: top left; 
     }
     @media (max-width: 525px) {

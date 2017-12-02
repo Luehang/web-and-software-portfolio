@@ -88,6 +88,8 @@ nav {
                 text-align: center;
                 &:last-child {
                     border-radius: 0 0 5px 5px;
+                    -webkit-border-radius: 0 0 5px 5px;
+                    -moz-border-radius: 0 0 5px 5px;
                 }
                 &:active {
                     background-color: rgb(52, 53, 56);
@@ -219,6 +221,8 @@ nav {
     // icon list button
     .icon-list {
         border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
         height: 45px;
         width: 55px;
         padding: 0;
@@ -233,6 +237,8 @@ nav {
         border: 1.5px solid rgb(243, 243, 243);
         margin: 8px;
         border-radius: 1px;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
         transition: transform 100ms;
     }
     .icon-list:hover {
