@@ -6,11 +6,17 @@
     "name": "Lue Hang",
     "email": "luehang17@gmail.com"
   },
+  "main": "app.js",
   "scripts": {
     "start": "nodemon ./bin/www",
     "babel": "babel",
     "build": "webpack -p"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luehang/web-and-software-portfolio.git"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "@sendgrid/mail": "^6.1.4",
     "bcrypt-nodejs": "0.0.3",
