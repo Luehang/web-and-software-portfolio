@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "Lue Hang",
-    "email": "lue_hang@hotmail.com"
+    "email": "luehang17@gmail.com"
   },
   "scripts": {
     "start": "nodemon ./bin/www",
