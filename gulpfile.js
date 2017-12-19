@@ -7,6 +7,7 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
      babel = require('gulp-babel'),
       sass = require('gulp-sass'),
+    cssmin = require('gulp-cssmin'),
 sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('compileSass', function() {
@@ -14,6 +15,12 @@ gulp.task('compileSass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write('../../maps'))
+        .pipe(gulp.dest('public/stylesheets'));
+});
+
+gulp.task('minifyCss', ['compileSass'], function() {
+    gulp.src('public/stylesheets/style.css')
+        .pipe(cssmin())
         .pipe(gulp.dest('public/stylesheets'));
 });
 
@@ -88,4 +95,6 @@ gulp.task('imageMin', function() {
 
 gulp.task('build', ['compileSass', 'concatMinify']);
 
-gulp.task('test', ['concatMinify']);
+gulp.task('production' ['minifyCss', 'concatMinify']);
+
+gulp.task('test', ['']);
