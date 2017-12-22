@@ -924,7 +924,7 @@ nav {
     margin: 0;
     padding: 0; }
   nav a {
-    font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+    font-family: "Arial Rounded MT Bold", "Segoe UI";
     text-decoration: none;
     font-size: 16px;
     color: #f3f3f3; }
@@ -934,7 +934,7 @@ nav {
     nav a:active {
       background-color: #343538; }
   nav .login-text {
-    font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+    font-family: "Arial Rounded MT Bold", "Segoe UI";
     color: #f3f3f3; }
   nav .login-text:hover {
     color: #3cb1c5; }
@@ -1028,7 +1028,7 @@ nav {
     line-height: 45px;
     display: inline-block;
     float: left;
-    font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+    font-family: "Arial Rounded MT Bold", "Segoe UI";
     color: #f3f3f3;
     font-weight: normal; }
   .icon-list {
@@ -1122,7 +1122,7 @@ footer {
 .slide .title {
   top: 30%;
   text-align: center;
-  font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+  font-family: "Arial Rounded MT Bold", "Segoe UI";
   color: #f3f3f3;
   font-weight: normal; }
   .slide .title h2 {
@@ -1154,7 +1154,7 @@ footer {
     display: inline-block;
     margin: 0;
     padding: 0;
-    font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+    font-family: "Arial Rounded MT Bold", "Segoe UI";
     color: #f3f3f3; }
   .slide .main-button p:nth-child(1) {
     padding-right: 5px; }
@@ -1226,14 +1226,16 @@ profile card css
       width: 100%; }
     .card .profile-container h1 {
       color: #181818;
-      font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+      font-family: "Cabin", "Trebuchet MS", "Tahoma";
       font-weight: none; }
     .card .profile-container .title {
       color: #3cb1c5;
+      font-family: "Cabin", "Trebuchet MS", "Tahoma";
       font-size: 18px;
       margin-top: 4px; }
     .card .profile-container p {
-      font-family: "Cabin", "Trebuchet MS", "Tahoma";
+      font-family: "Arial Rounded MT Bold", "Segoe UI";
+      font-weight: none;
       margin-left: 10px;
       margin-right: 10px; }
     .card .profile-container button {
@@ -1466,10 +1468,19 @@ image layout css
       font-size: 1.15em;
       margin: 0; }
     .image-container .text-container p:nth-child(2) {
-      font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
-      margin-top: 0; }
+      font-family: "Arial Rounded MT Bold", "Segoe UI";
+      margin-top: 0;
+      margin-bottom: 5px; }
+    .image-container .text-container a:nth-child(3) {
+      font-family: "Cabin", "Trebuchet MS", "Tahoma";
+      color: #363636;
+      font-size: 15px; }
+      .image-container .text-container a:nth-child(3):hover {
+        color: lightblue; }
+      .image-container .text-container a:nth-child(3):active {
+        color: #3cb1c5; }
     .image-container .text-container .more-button {
-      margin: 0 auto;
+      margin: 10px auto;
       width: 200px;
       height: 50px;
       line-height: 50px;
@@ -1505,7 +1516,7 @@ image layout css
   text-align: center;
   margin-bottom: 30px;
   color: #181818;
-  font-family: "Fredoka One", "Arial Rounded MT Bold", "Segoe UI";
+  font-family: "Arial Rounded MT Bold", "Segoe UI";
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 1px; }

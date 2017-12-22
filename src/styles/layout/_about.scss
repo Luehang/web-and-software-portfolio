@@ -52,16 +52,18 @@ profile card css
         }
         h1 {
             color: rgb(24, 24, 24);
-            font-family: $font-stack-secondary;
+            font-family: $font-stack-primary;
             font-weight: none;
         }
         .title {
             color: $dark-blue;
+            font-family: $font-stack-primary;
             font-size: 18px;
             margin-top: 4px;
         }
         p {
-            font-family: $font-stack-primary;
+            font-family: $font-stack-secondary;
+            font-weight: none;
             margin-left: 10px;
             margin-right: 10px;
         }

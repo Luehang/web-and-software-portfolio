@@ -29,6 +29,8 @@ class ContentImage extends Component {
             } 
             : {display: ""};
         const data = this.props.data;
+        const haveCode = data.code_location === "#" || data.code_location === "" ?
+            false : true;
         return(
             <div className="sort">
                 <div className="browser-container">
@@ -56,6 +58,7 @@ class ContentImage extends Component {
                                 <div className="text-container">
                                     <p>{data.title}</p>
                                     <p>{data.description}</p>
+                                    {haveCode ? <a href={data.code_location}>View Codes</a> : '' }
                                     <div className="more-button">
                                         <a href={data.path_location}>
                                             <i className="fa fa-external-link" aria-hidden="true"> 

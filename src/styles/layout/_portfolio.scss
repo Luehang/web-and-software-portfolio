@@ -245,9 +245,21 @@ image layout css
         p:nth-child(2) {
             font-family: $font-stack-secondary;
             margin-top: 0;
+            margin-bottom: 5px;
+        }
+        a:nth-child(3) {
+            font-family: $font-stack-primary;
+            color: rgb(54, 54, 54);
+            font-size: 15px;
+            &:hover {
+                color: $light-blue;
+            }
+            &:active {
+                color: $dark-blue;
+            }
         }
         .more-button {
-            margin: 0 auto;
+            margin: 10px auto;
             width: 200px;
             height: 50px;
             line-height: 50px;
