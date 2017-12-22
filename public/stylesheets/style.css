@@ -1077,6 +1077,7 @@ footer {
     left: 0;
     right: 0;
     text-align: center;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.4s;
     cursor: pointer; }
     footer .top-button a {
       text-decoration: none; }
@@ -1096,20 +1097,25 @@ footer {
     text-decoration: none; }
   footer .fa-envelope {
     background: white;
-    color: #226af0; }
-  footer .fa-facebook {
-    background: #3B5998;
-    color: white; }
-  footer .fa-linkedin {
-    background: #007bb5;
-    color: white; }
+    color: #226af0;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.5s; }
   footer .fa-github {
     background: #33353b;
-    color: white; }
+    color: white;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.6s; }
+  footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.7s; }
+  footer .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.8s; }
   footer p {
     text-align: center;
     font-family: "Cabin", "Trebuchet MS", "Tahoma";
-    color: #f0f0f0; }
+    color: #f0f0f0;
+    animation: slide-in-vertical 0.5s cubic-bezier(0.23, 1, 0.32, 1) both 0.9s; }
   footer .fa:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite; }
