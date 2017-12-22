@@ -1,3 +1,4 @@
+import './styles/style.scss'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import ContentImagesRow from './Components/ContentImagesRow.js'

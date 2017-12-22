@@ -1,5 +1,12 @@
 const portfolioData = [
     {
+        title: "E-commerce",
+        description: "Node JS/Express JS/MongoDB",
+        type: "node",
+        image_location: "./img/e-commerce.jpg",
+        path_location: "https://www.luehang.me"
+    },
+    {
         title: "Riverside Pizza",
         description: "Node JS/Express JS/MongoDB",
         type: "node",
