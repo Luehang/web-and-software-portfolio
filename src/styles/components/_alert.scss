@@ -1,0 +1,29 @@
+.alert {
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    height: 0px;
+    width: 50%;
+    transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+    height: 15px;
+    line-height: 15px;
+    z-index: 20;
+    margin-top: 52px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-family: $font-stack-primary;
+    font-size: 14px;
+    display: none;
+    &.is-open {
+        display: block;
+    }
+}
+.success {
+    background: rgb(90, 202, 90);
+}
+.warning {
+    background: rgb(201, 198, 49);
+}
+.danger {
+    background: rgb(196, 52, 52);
+}

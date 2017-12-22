@@ -1,0 +1,41 @@
+.slide {
+    overflow: hidden;
+}
+.belt {
+    width: 200%;
+    display: flex;
+    transition: transform 600ms cubic-bezier(0, 1.1, 0.79,-0.62);
+    perspective: 1000px;
+}
+.state {
+    width: 50%;
+    height: 100vh;
+}
+.state-1 {
+    transition: transform 1s ease-in-out;
+    transform-origin: center right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111c2d;
+}
+.state-2 {
+    background-color: rgb(243, 243, 243);
+    // box-shadow: 0 0 0 black;
+    z-index: 2;
+    transition: all 600ms ease-in-out;
+    overflow-y: scroll;
+}
+.slide.is-transitioned {
+    .belt {
+        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    .state-1 {
+        transform: scale(1) rotateY(-90deg);
+        -ms-transform: scale(1) rotateY(-90deg);
+        -webkit-transform: scale(1) rotateY(-90deg);
+    }
+}

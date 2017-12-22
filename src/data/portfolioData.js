@@ -1,6 +1,6 @@
 const portfolioData = [
     {
-        title: "E-commerce",
+        title: "E-Commerce",
         description: "Node JS/Express JS/MongoDB",
         type: "node",
         image_location: "./img/e-commerce.jpg",
