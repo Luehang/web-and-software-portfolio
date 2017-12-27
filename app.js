@@ -71,6 +71,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
   res.locals.login = req.isAuthenticated();
+  res.locals.googleTrackingID = process.env.GOOGLE_TRACKING_ID;
   res.locals.session = req.session;
   next();
 });
