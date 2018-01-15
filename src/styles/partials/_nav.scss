@@ -57,9 +57,9 @@ nav {
             text-align: left;
             display: inline-block;
         }
-        ul.social-list {
-            float: right;
-        }
+        // ul.social-list {
+        //     float: right;
+        // }
         li {
             float: left;
             width: 150px;
@@ -71,23 +71,23 @@ nav {
                 font-size: 18px;
             }
         }
-        ul.social-list {
-            .login-text {
-                text-align: right;
-            }
-            ul li {
-                background-color: rgb(58, 59, 63);
-                text-align: center;
-                &:last-child {
-                    border-radius: 0 0 5px 5px;
-                    -webkit-border-radius: 0 0 5px 5px;
-                    -moz-border-radius: 0 0 5px 5px;
-                }
-                &:active {
-                    background-color: rgb(52, 53, 56);
-                }
-            }
-        }
+        // ul.social-list {
+        //     .login-text {
+        //         text-align: right;
+        //     }
+        //     ul li {
+        //         background-color: rgb(58, 59, 63);
+        //         text-align: center;
+        //         &:last-child {
+        //             border-radius: 0 0 5px 5px;
+        //             -webkit-border-radius: 0 0 5px 5px;
+        //             -moz-border-radius: 0 0 5px 5px;
+        //         }
+        //         &:active {
+        //             background-color: rgb(52, 53, 56);
+        //         }
+        //     }
+        // }
         ul.social-list li ul li {
             display: none;
         }
@@ -125,20 +125,20 @@ nav {
         li {
             background-color: rgb(58, 59, 63);
         }
-        .social-list {
-            border-bottom: 2px solid $dark-blue;
-            .login-text {
-                display: block;
-                padding: 10px 5%;
-                cursor: pointer;
-            }
-            li:nth-child(-n+1) {
-            border-top: 1px solid rgb(110, 114, 114);
-            }
-            a {
-            padding-left: 40px;
-            }
-        }
+        // .social-list {
+        //     border-bottom: 2px solid $dark-blue;
+        //     .login-text {
+        //         display: block;
+        //         padding: 10px 5%;
+        //         cursor: pointer;
+        //     }
+        //     li:nth-child(-n+1) {
+        //     border-top: 1px solid rgb(110, 114, 114);
+        //     }
+        //     a {
+        //     padding-left: 40px;
+        //     }
+        // }
         a {
             display: block;
             padding: 10px 5%;

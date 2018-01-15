@@ -958,8 +958,6 @@ nav {
     nav ul {
       text-align: left;
       display: inline-block; }
-    nav ul.social-list {
-      float: right; }
     nav li {
       float: left;
       width: 150px;
@@ -969,17 +967,6 @@ nav {
       cursor: pointer; }
       nav li .nav-main-text:hover {
         font-size: 18px; }
-    nav ul.social-list .login-text {
-      text-align: right; }
-    nav ul.social-list ul li {
-      background-color: #3a3b3f;
-      text-align: center; }
-      nav ul.social-list ul li:last-child {
-        border-radius: 0 0 5px 5px;
-        -webkit-border-radius: 0 0 5px 5px;
-        -moz-border-radius: 0 0 5px 5px; }
-      nav ul.social-list ul li:active {
-        background-color: #343538; }
     nav ul.social-list li ul li {
       display: none; }
     nav li:hover > ul.dropdown-menu li {
@@ -1000,22 +987,12 @@ nav {
     margin: 0 auto;
     position: relative;
     padding-top: 5px;
-    overflow: auto; }
+    height: 50px; }
   nav .list-icon-container {
     background-color: #282a31;
     border-bottom: 3px solid #3cb1c5; }
   nav li {
     background-color: #3a3b3f; }
-  nav .social-list {
-    border-bottom: 2px solid #3cb1c5; }
-    nav .social-list .login-text {
-      display: block;
-      padding: 10px 5%;
-      cursor: pointer; }
-    nav .social-list li:nth-child(-n+1) {
-      border-top: 1px solid #6e7272; }
-    nav .social-list a {
-      padding-left: 40px; }
   nav a {
     display: block;
     padding: 10px 5%; }

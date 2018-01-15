@@ -1,6 +1,6 @@
 const portfolioData = [
     {
-        title: "E-Commerce",
+        title: "Big E-Commerce",
         description: "Node JS/Express JS/MongoDB",
         type: "node",
         image_location: "./img/e-commerce.jpg",
@@ -8,12 +8,36 @@ const portfolioData = [
         path_location: "https://www.luehang.me"
     },
     {
-        title: "Riverside Pizza",
+        title: "Riverside Pizza E-Commerce",
         description: "Node JS/Express JS/MongoDB",
         type: "node",
         image_location: "./img/riverside-pizza.jpg",
         code_location: "https://github.com/Luehang/riverside-pizza",
         path_location: "https://www.manitowocsriversidepizza.com"
+    },
+    {
+        title: "Lue Hang's Portfolio",
+        description: "React JS",
+        type: "react",
+        image_location: "./img/portfolio.jpg",
+        code_location: "",
+        path_location: "https://www.luehangs.site"
+    },
+    {
+        title: "Project Sorter",
+        description: "React JS",
+        type: "react",
+        image_location: "./img/image-sorter.jpg",
+        code_location: "https://codepen.io/Luehang/pen/MOPzLZ",
+        path_location: "https://codepen.io/Luehang/full/MOPzLZ/"
+    },
+    {
+        title: "Contact Section",
+        description: "Javascript",
+        type: "javascript",
+        image_location: "./img/contact-section.jpg",
+        code_location: "https://codepen.io/Luehang/pen/RjqyRp",
+        path_location: "https://codepen.io/Luehang/full/RjqyRp/"
     },
     {
         title: "Game Of Life",
