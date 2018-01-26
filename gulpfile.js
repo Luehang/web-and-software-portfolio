@@ -7,19 +7,8 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'),
      babel = require('gulp-babel'),
 sourcemaps = require('gulp-sourcemaps'),
-    concat = require('gulp-concat');
-
-//       sass = require('gulp-sass');
-    
-
-
-// gulp.task('compileSass', function() {
-//     gulp.src('src/styles/style.scss')
-//         .pipe(sourcemaps.init())
-//         .pipe(sass())
-//         .pipe(sourcemaps.write('../../maps'))
-//         .pipe(gulp.dest('public/stylesheets'));
-// });
+    concat = require('gulp-concat'),
+      sass = require('gulp-sass');
 
 gulp.task('minifyCss', function() {
     gulp.src('public/stylesheets/style.css')
@@ -38,17 +27,6 @@ gulp.task('concatScripts', function() {
     .pipe(sourcemaps.write('../../maps'))
     .pipe(gulp.dest('public/javascripts'));
 });
-
-// gulp.task('compileReact', function() {
-//     return gulp.src(['src/app.js', 'src/components/*.js'])
-//         .pipe(sourcemaps.init())
-//         .pipe(babel({
-//             presets: ['env', 'react']
-//         }))
-//         .pipe(rename('bundle.js'))
-//         .pipe(sourcemaps.write('../../maps'))
-//         .pipe(gulp.dest('public'));
-// });
 
 gulp.task('minifyScripts', ['concatScripts'], function() {
     return gulp.src('public/javascripts/index.js')
@@ -79,9 +57,7 @@ gulp.task('concatMinify', ['minifyScripts', 'minifyThree'], function() {
 });
 
 gulp.task('imageMin', function() {
-    gulp.src(['src/img/*.jpg', 
-        'src/img/*.png', 
-        'src/img/*.svg'])
+    gulp.src(['src/img/**'])
             .pipe(imagemin({optimizationLevel: 5}))
             .pipe(gulp.dest('public/img'));
 });

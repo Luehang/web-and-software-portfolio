@@ -51,11 +51,16 @@ app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
+
+// for parsing application/json
 app.use(bodyParser.json());
+// for parsing application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(validator());
+
 app.use(cookieParser());
 app.use(session({
   secret: process.env.SESSION_SECRET, 
@@ -71,7 +76,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
   res.locals.login = req.isAuthenticated();
-  res.locals.googleTrackingID = process.env.GOOGLE_TRACKING_ID;
+  res.locals.GOOGLE_TRACKING_ID = process.env.GOOGLE_TRACKING_ID;
   res.locals.session = req.session;
   next();
 });
