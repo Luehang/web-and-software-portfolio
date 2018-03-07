@@ -64,7 +64,7 @@ router.post('/send-message', (req, res) => {
                 <tr style="padding:0; vertical-align:top; text-align:center">
                 <td class="x_no-padding" style="word-break:break-word; padding:0; vertical-align:top; text-align:center; color:#333333; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:normal; margin:0; line-height:20px; font-size:14px; border-collapse:collapse!important">
                 <div class="x_hero-image-wrap" style="overflow:hidden; border-radius:3px 3px 0 0">
-                <a href="${process.env.APP_URL}" target="_blank" style="color:#4183C4; text-decoration:none"><div style="display: inline-block; max-width: 99.9%;"><img src="${process.env.APP_URL}/img/web-logo.jpg" alt="${process.env.APP_NAME}" border="0" class="x_hero-image" style="margin:0; padding:0; outline:none; text-decoration:none; height:200px; max-width:100%; border:none; display:block"></div> </a></div>
+                <a href="${process.env.APP_URL}" target="_blank" style="color:#4183C4; text-decoration:none"><div style="display: inline-block; max-width: 99.9%;"><img src="${process.env.APP_URL}/img/web-logo.png" alt="${process.env.APP_NAME}" border="0" class="x_hero-image" style="margin:0; padding:0; outline:none; text-decoration:none; height:200px; max-width:100%; border:none; display:block"></div> </a></div>
                 </td>
                 <td class="x_expander" style="word-break:break-word; padding:0!important; vertical-align:top; text-align:center; color:#333333; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:normal; margin:0; line-height:20px; font-size:14px; visibility:hidden; width:0px; border-collapse:collapse!important">
                 </td>
