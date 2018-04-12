@@ -1,40 +1,34 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import ContentImage from './ContentImage.js'
 
-class ContentImagesRow extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        let row = [];
-        let sortType = "";
-        if (this.props.isAll) {
-            sortType = "all";
-        } else if (this.props.isNode) {
-            sortType = "node";
-        } else if (this.props.isReact) {
-            sortType = "react";
-        } else if (this.props.isJavascript) {
-            sortType = "javascript";
+export default function ContentImagesRow(props) {
+    const {
+        projectsData,
+        sortType
+    } = props;
+    const rows = projectsData.map((project, i) => {
+        if (sortType == "all") {
+            return (
+                <ContentImage data={project} key={i + 1} />
+            );
         }
-        this.props.data.map((data) => {
-            if (sortType === "all") {
-                row.push(
-                    <ContentImage data={data} key={row.length++} />
-                );
-            }
-            if (sortType === data.type) {
-                row.push(
-                    <ContentImage data={data} key={row.length++} />
-                );
-            }
-        });
-        return (
-            <div className="sort-row">
-                {row}
-            </div>
-        );
-    }
+        if (sortType == project.type) {
+            return (
+                <ContentImage data={project} key={i + 1} />
+            );
+        }
+    });
+    return (
+        <div className="sort-row">
+            {rows}
+        </div>
+    );
 }
 
-export default ContentImagesRow;
+ContentImagesRow.propTypes = {
+    projectsData: PropTypes.array.isRequired,
+    sortType: PropTypes.string.isRequired
+}
+

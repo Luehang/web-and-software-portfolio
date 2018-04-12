@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Lue Hang All Rights Reserved.
+ * Copyright 2018 Lue Hang. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,6 +44,7 @@ db.on("error", function(err) {
   console.log("Could not connect to mongo server.");
   console.error(err);
 });
+
 require('./config/passport');
 
 // view engine setup

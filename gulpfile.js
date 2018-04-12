@@ -17,6 +17,14 @@ gulp.task('minifyCss', function() {
         .pipe(gulp.dest('public/stylesheets'));
 });
 
+gulp.task('sassMainMin', () => {
+    return gulp.src('src/styles/application.scss')
+        .pipe(concat('index.min.css'))
+        .pipe(sass())
+        .pipe(cssmin())
+        .pipe(gulp.dest('public/stylesheets'));
+});
+
 gulp.task('concatScripts', function() {
     return gulp.src([
         'src/js/index.js',
@@ -61,6 +69,12 @@ gulp.task('imageMin', function() {
             .pipe(imagemin({optimizationLevel: 5}))
             .pipe(gulp.dest('public/img'));
 });
+
+gulp.task('watch', () => {
+    gulp.watch('src/styles/**/*.scss', ['sassMainMin']);
+});
+
+gulp.task('default', ['watch']);
 
 gulp.task('build', ['imageMin', 'concatMinify', 'minifyCss']);
 

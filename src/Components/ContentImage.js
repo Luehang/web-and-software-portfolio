@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class ContentImage extends Component {
+export default class ContentImage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -75,5 +75,3 @@ class ContentImage extends Component {
         );
     }
 }
-
-export default ContentImage;
