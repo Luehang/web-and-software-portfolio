@@ -292,7 +292,7 @@ export default class HomeContainer extends Component {
     render() {
         return (
             <div style={{display: 'flex',alignItems: 'center',justifyContent: 'center'}}>
-                <div className="loader-container">
+                <div className="loader-container" style={{position: 'absolute'}}>
                     <div className="spinner pulser"></div>
                 </div>
                 <div className="content">
