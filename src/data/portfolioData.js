@@ -1,7 +1,23 @@
 const portfolioData = [
     {
+        title: "Downloading E-Commerce",
+        description: "Node JS/MongoDB",
+        type: "node",
+        image_location: "./img/download-shop.jpg",
+        code_location: "https://github.com/Luehang/tyw-digital-media-download",
+        path_location: ""
+    },
+    {
+        title: "Cleaning Service",
+        description: "Node JS/MongoDB",
+        type: "javascript",
+        image_location: "./img/cleaning-service.jpg",
+        code_location: "https://github.com/Luehang/cleaning-service",
+        path_location: ""
+    },
+    {
         title: "E-Commerce",
-        description: "Node JS/Express JS/MongoDB",
+        description: "Node JS/MongoDB",
         type: "node",
         image_location: "./img/e-commerce.jpg",
         code_location: "#",
@@ -9,11 +25,11 @@ const portfolioData = [
     },
     {
         title: "Riverside Pizza E-Commerce",
-        description: "Node JS/Express JS/MongoDB",
+        description: "Node JS/MongoDB",
         type: "node",
         image_location: "./img/riverside-pizza.jpg",
         code_location: "https://github.com/Luehang/riverside-pizza",
-        path_location: "https://www.manitowocsriversidepizza.com"
+        path_location: ""
     },
     {
         title: "Lue Hang's Portfolio",
@@ -44,7 +60,7 @@ const portfolioData = [
         description: "React JS/jQuery",
         type: "react",
         image_location: "./img/game_of_life.jpg",
-        code_location: "#",
+        code_location: "https://codepen.io/Luehang/pen/gGobqM",
         path_location: "https://codepen.io/Luehang/full/gGobqM/"
     },
     {
@@ -60,7 +76,7 @@ const portfolioData = [
         description: "React JS",
         type: "react",
         image_location: "./img/recipe_box.jpg",
-        code_location: "#",
+        code_location: "https://codepen.io/Luehang/pen/WEeLMY",
         path_location: "https://codepen.io/Luehang/full/WEeLMY/"
     },
     {
@@ -76,7 +92,7 @@ const portfolioData = [
         description: "React JS",
         type: "react",
         image_location: "./img/markdown.jpg",
-        code_location: "#",
+        code_location: "https://codepen.io/Luehang/pen/WOaYEj",
         path_location: "https://codepen.io/Luehang/full/WOaYEj/"
     },
     {
@@ -116,24 +132,8 @@ const portfolioData = [
         description: "Javascript/jQuery",
         type: "javascript",
         image_location: "./img/weather.jpg",
-        code_location: "#",
+        code_location: "https://codepen.io/Luehang/pen/zwXBBy",
         path_location: "https://codepen.io/Luehang/full/zwXBBy/"
-    },
-    {
-        title: "Twitch Users",
-        description: "Javascript/jQuery",
-        type: "javascript",
-        image_location: "./img/twitch.jpg",
-        code_location: "https://github.com/Luehang/twitch-tv",
-        path_location: "https://codepen.io/Luehang/full/YVboxm/"
-    },
-    {
-        title: "Flickr Search",
-        description: "Javascript/jQuery",
-        type: "javascript",
-        image_location: "./img/quote.jpg",
-        code_location: "#",
-        path_location: "https://codepen.io/Luehang/full/wdOePp/"
     },
 ];
 

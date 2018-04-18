@@ -72,6 +72,7 @@ gulp.task('imageMin', function() {
 
 gulp.task('watch', () => {
     gulp.watch('src/styles/**/*.scss', ['sassMainMin']);
+    gulp.watch('src/img/*.*', ['imageMin']);
 });
 
 gulp.task('default', ['watch']);

@@ -21,10 +21,10 @@
             padding-left: 6px;
             font-size: 1.55em;
             color: $dark-blue;
-            animation: slide-in-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 1.3s;
+            animation: slide-in-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 1s;
         }
         h2:nth-child(3) {
-            animation: slide-in-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 1.7s;
+            animation: slide-in-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 1.3s;
         }
     }
     .main-button {
@@ -37,7 +37,7 @@
         color: white;
         background: transparent;
         cursor: pointer;
-        animation: slide-in-vertical 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 2.4s;
+        animation: slide-in-vertical 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both 0.4s;
         p {
             display: inline-block;
             margin: 0;

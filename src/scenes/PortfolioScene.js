@@ -65,6 +65,7 @@ export default class PortfolioScene extends Component {
                 <div className="slide">
                     <div className="belt">
                         <div className="state state-1">
+
                             <HomeContainer />
                             
                         </div>
@@ -74,7 +75,7 @@ export default class PortfolioScene extends Component {
                                 nav_settings={nav_settings}
                                 handleNavChange={this.handleNavChange}
                             />
-                            
+
                             <div className="alert"></div>
 
                             <AboutContainer />
@@ -87,7 +88,6 @@ export default class PortfolioScene extends Component {
                             <ContactContainer />
 
                             <Footer />
-                            
                         </div> {/* end state-2 */}
 
                     </div> {/* end belt */}

@@ -5,7 +5,7 @@ export default function About() {
         <section className="body-container" id="about">
             <h1>ABOUT</h1>
             <div className="line-separation"></div>
-            <div className="card"><img src="img/lue_hang.jpg" alt="Lue Hang" style={{width: '100%'}}/>
+            <div className="card"><img src="img/lue_hang2018.jpg" alt="Lue Hang" style={{width: '100%'}}/>
                 <div className="profile-container">
                     <div className="profile-top">
                         <h1>Lue Hang</h1>

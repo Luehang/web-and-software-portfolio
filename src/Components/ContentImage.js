@@ -29,12 +29,12 @@ export default class ContentImage extends Component {
             } 
             : {display: ""};
         const data = this.props.data;
-        const haveCode = data.code_location === "#" || data.code_location === "" ?
-            false : true;
+        const haveCode = /http/i.test(data.code_location) || /www/i.test(data.code_location) ? true : false;
+        const haveSite = /http/i.test(data.path_location) || /www/i.test(data.code_location) ? true : false;
         return(
             <div className="sort">
                 <div className="browser-container">
-                    <div className="row">
+                    <div className="row" style={{margin: 0}}>
                         <div className="column left">
                             <span className="dot" style={{background:'#ED594A'}}></span>
                             <span className="dot" style={{background:'#FDD800'}}></span>
@@ -58,14 +58,20 @@ export default class ContentImage extends Component {
                                 <div className="text-container">
                                     <p>{data.title}</p>
                                     <p>{data.description}</p>
-                                    {haveCode ? <a href={data.code_location}>View Codes</a> : '' }
-                                    <div className="more-button">
-                                        <a href={data.path_location}>
-                                            <i className="fa fa-external-link" aria-hidden="true"> 
-                                                <p>VIEW SITE</p>
-                                            </i>
-                                        </a>
-                                    </div>
+                                    {
+                                        haveCode ? 
+                                            <a href={data.code_location}>View Codes</a> : ""
+                                    }
+                                    {
+                                        haveSite ?
+                                            <div className="more-button">
+                                                <a href={data.path_location}>
+                                                    <i className="fa fa-external-link" aria-hidden="true"> 
+                                                        <p>VIEW SITE</p>
+                                                    </i>
+                                                </a>
+                                            </div> : ""
+                                    }
                                 </div>
                             </div>
                         </div>
