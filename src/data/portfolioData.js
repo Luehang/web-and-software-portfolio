@@ -16,7 +16,7 @@ const portfolioData = [
         path_location: ""
     },
     {
-        title: "E-Commerce",
+        title: "E-Commerce in-progress",
         description: "Node JS/MongoDB",
         type: "node",
         image_location: "./img/e-commerce.jpg",
